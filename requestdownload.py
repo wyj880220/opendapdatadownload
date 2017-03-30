@@ -65,13 +65,6 @@ def downloadopdata(urldata,oldlink,savelink):
         with open('errorlink'+'.txt','a') as f:
             f.write(urldata+'\n')
             pass
-    # mail_host="smtp.126.com"  #设置服务器
-    # mail_user="wyj880220@126.com"    #用户名
-    # mail_pass="Lifeifei@#880612"   #口令
-    # receivers = ['yjwang@qdio.ac.cn','340041928@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-    # subject = '数据下载完成邮件通知'
-    # mail_message="<p>尊敬的用户您好：</p><p>您在服务器的数据下载完成,请及时登录服务器整理归类</p>"
-    # emailsend.send_data_mail(mail_host,mail_user,mail_pass,mail_message,receivers,subject)
 if __name__ == '__main__':
     urldata="http://data.nodc.noaa.gov/opendap/woa/WOA13/DATA/salinity/csv/A5B2/0.25/woa13_A5B2_s10gp04.csv.gz"
     oldlink="http://data.nodc.noaa.gov/opendap/"
